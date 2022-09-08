@@ -119,6 +119,7 @@ extension PageContentView: UICollectionViewDelegate {
             if startOffsetX - currectOffsetX == scollViewWidth {
                sourceIndex = targetIndex
             }
+            
         }
         
         print("progress:\(progress), sourceIndex:\(sourceIndex), targetIndex:\(targetIndex)")
