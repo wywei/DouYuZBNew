@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     
     private lazy var pageTitleView: PageTitleView = { 
         let frame = CGRect(x: 0, y: kNavigationBarH + kStatusBarH, width: kScreenW, height: kTitleViewH)
-        let titles = ["推荐","游戏","娱乐","趣玩","趣玩","趣玩","趣玩","趣玩","趣玩"]
+        let titles = ["推荐","游戏","娱乐","趣玩"]
         let titlePageView = PageTitleView(frame: frame, titles: titles)
         titlePageView.delegate = self
         return titlePageView
@@ -20,16 +20,17 @@ class HomeViewController: UIViewController {
 
     private lazy var pageContentView: PageContentView = { [weak self] in
         
-        let contentViewH: CGFloat = kScreenH - kNavigationBarH - kStatusBarH - kTitleViewH
+        let contentViewH: CGFloat = kScreenH - kNavigationBarH - kStatusBarH - kTitleViewH - kTabbarH
         let frame = CGRect.init(x: 0, y: kNavigationBarH + kStatusBarH + kTitleViewH , width: kScreenW, height: contentViewH)
         var childVcs = [UIViewController]()
-        for _ in 0..<4 {
+        childVcs.append(RecomendViewController())
+        for _ in 0..<3 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
         }
         
-        let pageContentView = PageContentView.init(frame: frame, childVcs: childVcs, parentViewController: self)
+        let pageContentView = PageContentView(frame: frame, childVcs: childVcs, parentViewController: self)
         pageContentView.delegate = self
         return pageContentView
     }()
@@ -38,11 +39,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         setupUI()
-        
-        
     }
-    
-
 
 }
 
@@ -58,7 +55,6 @@ extension HomeViewController {
         view.addSubview(pageTitleView)
         
         view.addSubview(pageContentView)
-        pageContentView.backgroundColor = UIColor.purple
         
     }
     

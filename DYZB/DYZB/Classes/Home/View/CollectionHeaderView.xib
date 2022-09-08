@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6c-VY-UPA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Jpl-6k-Jjz"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reader_slider_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1RA-Df-cIg">
+                    <rect key="frame" x="10" y="21" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="TRq-U2-ReI"/>
+                        <constraint firstAttribute="height" constant="20" id="kHj-r0-W6A"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKL-3q-hR2">
+                    <rect key="frame" x="40" y="21.5" width="33" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFV-nB-uLX">
+                    <rect key="frame" x="230" y="15" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="pwp-fn-m5A"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="更多 &gt;">
+                        <color key="baseForegroundColor" systemColor="secondaryLabelColor"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="UKL-3q-hR2" firstAttribute="leading" secondItem="1RA-Df-cIg" secondAttribute="trailing" constant="10" id="3SH-oA-SdG"/>
+                <constraint firstItem="UKL-3q-hR2" firstAttribute="centerY" secondItem="1RA-Df-cIg" secondAttribute="centerY" id="JZc-AA-wLQ"/>
+                <constraint firstItem="R6c-VY-UPA" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="K3v-VM-6vc"/>
+                <constraint firstItem="1RA-Df-cIg" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="W5O-er-EjQ"/>
+                <constraint firstItem="bFV-nB-uLX" firstAttribute="top" secondItem="R6c-VY-UPA" secondAttribute="bottom" constant="5" id="awp-oo-EvT"/>
+                <constraint firstAttribute="trailing" secondItem="R6c-VY-UPA" secondAttribute="trailing" id="iBY-gM-mMo"/>
+                <constraint firstAttribute="trailing" secondItem="bFV-nB-uLX" secondAttribute="trailing" constant="10" id="kDm-E2-feo"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="bFV-nB-uLX" secondAttribute="bottom" constant="5" id="t5z-0Z-Tgz"/>
+                <constraint firstItem="R6c-VY-UPA" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="u2W-VX-V7e"/>
+                <constraint firstItem="1RA-Df-cIg" firstAttribute="top" secondItem="R6c-VY-UPA" secondAttribute="bottom" constant="11" id="ylZ-WA-U73"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="72.991071428571431"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="reader_slider_icon" width="20" height="20"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

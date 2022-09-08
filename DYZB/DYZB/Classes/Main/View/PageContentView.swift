@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol PageContentViewDelegate: class{
+protocol PageContentViewDelegate: AnyObject {
     
     func pageContentView(pageContentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int)
 }
@@ -82,9 +82,7 @@ extension PageContentView: UICollectionViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        if isForbidScrollDelegate {
-            return
-        }
+        if isForbidScrollDelegate { return }
         
         var progress: CGFloat = 0
         var sourceIndex: Int = 0

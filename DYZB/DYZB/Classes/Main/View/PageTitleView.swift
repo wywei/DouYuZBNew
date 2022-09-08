@@ -7,12 +7,10 @@
 
 import UIKit
 
-
-
-protocol PageTitleViewDelegate: class {
-    
+protocol PageTitleViewDelegate: AnyObject {
     func pageTitleView(titleView: PageTitleView, selectIndex index: Int)
 }
+
 
 private let kNormalColor:(CGFloat, CGFloat, CGFloat) = (85, 85, 85)
 private let kSelectColor:(CGFloat, CGFloat, CGFloat) = (255, 128, 0)
@@ -50,9 +48,7 @@ class PageTitleView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    
+   
 }
 
 
