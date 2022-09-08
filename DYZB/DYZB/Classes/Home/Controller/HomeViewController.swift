@@ -7,23 +7,91 @@
 
 import UIKit
 
+private let kTitleViewH: CGFloat = 40
 class HomeViewController: UIViewController {
+    
+    private lazy var pageTitleView: PageTitleView = { 
+        let frame = CGRect(x: 0, y: kNavigationBarH + kStatusBarH, width: kScreenW, height: kTitleViewH)
+        let titles = ["推荐","游戏","娱乐","趣玩","趣玩","趣玩","趣玩","趣玩","趣玩"]
+        let titlePageView = PageTitleView(frame: frame, titles: titles)
+        titlePageView.delegate = self
+        return titlePageView
+    }()
 
+    private lazy var pageContentView: PageContentView = { [weak self] in
+        
+        let contentViewH: CGFloat = kScreenH - kNavigationBarH - kStatusBarH - kTitleViewH
+        let frame = CGRect.init(x: 0, y: kNavigationBarH + kStatusBarH + kTitleViewH , width: kScreenW, height: contentViewH)
+        var childVcs = [UIViewController]()
+        for _ in 0..<4 {
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+            childVcs.append(vc)
+        }
+        
+        let pageContentView = PageContentView.init(frame: frame, childVcs: childVcs, parentViewController: self)
+        pageContentView.delegate = self
+        return pageContentView
+    }()
+     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupUI()
+        
+        
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+
+// MARK: - 设置UI界面
+extension HomeViewController {
+    
+    private func setupUI() {
+      
+        // 1.设置导航条
+        setupNavigationBar()
+        
+        view.addSubview(pageTitleView)
+        
+        view.addSubview(pageContentView)
+        pageContentView.backgroundColor = UIColor.purple
+        
     }
-    */
+    
+    // 1.设置导航条
+    private func setupNavigationBar() {
+        
+        // 1.设置左边的item
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "reader_slider_icon")
+        
+        // 2.设置右边的items
+        let size = CGSize.init(width: 40, height: 40)
+        let rightItem1 = UIBarButtonItem(imageName: "reader_slider_icon", highImageName: "reader_slider_icon", size: size)
+        let rightItem2 = UIBarButtonItem(imageName: "reader_slider_icon", highImageName: "reader_slider_icon", size: size)
+        let rightItem3 = UIBarButtonItem(imageName: "reader_slider_icon", highImageName: "reader_slider_icon", size: size)
+        navigationItem.rightBarButtonItems = [rightItem1, rightItem2, rightItem3]
+    }
+    
+}
 
+
+extension HomeViewController: PageTitleViewDelegate {
+    
+    func pageTitleView(titleView: PageTitleView, selectIndex index: Int) {
+        pageContentView.setCurrentIndex(currentIndex: index)
+    }
+    
+}
+
+
+extension HomeViewController: PageContentViewDelegate {
+    
+    func pageContentView(pageContentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitle(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+    
 }
