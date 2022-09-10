@@ -39,6 +39,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         setupUI()
+        
+        NetworkTool.requestData(type: .GET, URLString: "http://httpbin.org/get") { response in
+            print(response)
+        }
+        
     }
 
 }

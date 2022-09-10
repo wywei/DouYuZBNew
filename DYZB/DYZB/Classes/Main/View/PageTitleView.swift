@@ -108,10 +108,13 @@ extension PageTitleView {
     
     @objc private func tapLabel(_ tap: UITapGestureRecognizer) {
         
+    
         let currentLabel = tap.view
         guard let currentLabel = currentLabel as? UILabel else {
             return
         }
+        
+        if currentLabel.tag == currentIndex { return }
         
         let oldLabel = titleLabels[currentIndex]
         

@@ -7,8 +7,17 @@
 
 import UIKit
 
-class CollectionPrettyCell: UICollectionViewCell {
+class CollectionPrettyCell: CollectionBaseCell {
 
+    @IBOutlet weak var addressLabel: UIButton!
+    
+    override var anchor: AnchorModel? {
+        didSet {
+            super.anchor = anchor
+            
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

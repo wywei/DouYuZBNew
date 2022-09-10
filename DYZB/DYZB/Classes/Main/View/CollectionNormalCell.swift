@@ -6,9 +6,22 @@
 //
 
 import UIKit
+import Kingfisher
+class CollectionNormalCell: CollectionBaseCell {
 
-class CollectionNormalCell: UICollectionViewCell {
+    
+   override var anchor: AnchorModel? {
+        didSet {
+            guard let anchor = anchor else {
+                return
+            }
+            super.anchor = anchor
+            
+        }
 
+    }
+        
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

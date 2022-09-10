@@ -75,6 +75,9 @@
                 <constraint firstItem="qck-3M-xWg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="tiV-EF-E5D"/>
             </constraints>
             <size key="customSize" width="145" height="143"/>
+            <connections>
+                <outlet property="iconImageView" destination="qck-3M-xWg" id="zaz-u2-rEs"/>
+            </connections>
             <point key="canvasLocation" x="26.811594202898554" y="36.495535714285715"/>
         </collectionViewCell>
     </objects>

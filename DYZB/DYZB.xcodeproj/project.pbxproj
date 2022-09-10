@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D91E70828CAE58F00E29DE5 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E70728CAE58F00E29DE5 /* NetworkTool.swift */; };
+		0D91E70B28CAEE8200E29DE5 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E70A28CAEE8200E29DE5 /* RecommendViewModel.swift */; };
+		0D91E70D28CB19D300E29DE5 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E70C28CB19D300E29DE5 /* Date-Extension.swift */; };
+		0D91E70F28CB1B9800E29DE5 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E70E28CB1B9800E29DE5 /* AnchorGroup.swift */; };
+		0D91E71128CB83D300E29DE5 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E71028CB83D300E29DE5 /* AnchorModel.swift */; };
+		0D91E71328CB921400E29DE5 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E71228CB921400E29DE5 /* CollectionBaseCell.swift */; };
 		0DF522E928C898E70083420E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF522E828C898E70083420E /* AppDelegate.swift */; };
 		0DF522EB28C898E70083420E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF522EA28C898E70083420E /* SceneDelegate.swift */; };
 		0DF522ED28C898E70083420E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF522EC28C898E70083420E /* ViewController.swift */; };
@@ -34,9 +40,16 @@
 		0DF5236428CA5AE90083420E /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF5236228CA5AE90083420E /* CollectionNormalCell.xib */; };
 		0DF5236728CA5E870083420E /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF5236528CA5E870083420E /* CollectionPrettyCell.swift */; };
 		0DF5236828CA5E870083420E /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF5236628CA5E870083420E /* CollectionPrettyCell.xib */; };
+		7B95F7DB31960A897A6A72B7 /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32123E6AA4B4BE6750F503A7 /* Pods_DYZB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D91E70728CAE58F00E29DE5 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		0D91E70A28CAEE8200E29DE5 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		0D91E70C28CB19D300E29DE5 /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
+		0D91E70E28CB1B9800E29DE5 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		0D91E71028CB83D300E29DE5 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		0D91E71228CB921400E29DE5 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		0DF522E528C898E70083420E /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF522E828C898E70083420E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DF522EA28C898E70083420E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +79,9 @@
 		0DF5236228CA5AE90083420E /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		0DF5236528CA5E870083420E /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		0DF5236628CA5E870083420E /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		32123E6AA4B4BE6750F503A7 /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF42BC479BBBC248585A25EC /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
+		CC7996C0265CB9C1E24A235E /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +89,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B95F7DB31960A897A6A72B7 /* Pods_DYZB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D91E70928CAEE6400E29DE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D91E70A28CAEE8200E29DE5 /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0DF522DC28C898E70083420E = {
 			isa = PBXGroup;
 			children = (
 				0DF522E728C898E70083420E /* DYZB */,
 				0DF522E628C898E70083420E /* Products */,
+				DD7F006509C1F225DFF4C550 /* Pods */,
+				FB88D3C853BB7D8124507BE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,7 @@
 		0DF522FD28C899F80083420E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0D91E70928CAEE6400E29DE5 /* ViewModel */,
 				0DF522FE28C899F80083420E /* Controller */,
 				0DF522FF28C899F80083420E /* Model */,
 				0DF5230028C899F80083420E /* View */,
@@ -279,6 +307,8 @@
 		0DF5230F28C899F80083420E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D91E70E28CB1B9800E29DE5 /* AnchorGroup.swift */,
+				0D91E71028CB83D300E29DE5 /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +322,7 @@
 				0DF5236228CA5AE90083420E /* CollectionNormalCell.xib */,
 				0DF5236528CA5E870083420E /* CollectionPrettyCell.swift */,
 				0DF5236628CA5E870083420E /* CollectionPrettyCell.xib */,
+				0D91E71228CB921400E29DE5 /* CollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,6 +332,7 @@
 			children = (
 				0DF5232E28C8A91C0083420E /* Extension */,
 				0DF5233328C986360083420E /* Common.swift */,
+				0D91E70728CAE58F00E29DE5 /* NetworkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -310,8 +342,26 @@
 			children = (
 				0DF5232F28C8A9410083420E /* UIBarButtonItem-Extension.swift */,
 				0DF5233728C9C2150083420E /* UIColor-Extension.swift */,
+				0D91E70C28CB19D300E29DE5 /* Date-Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD7F006509C1F225DFF4C550 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC7996C0265CB9C1E24A235E /* Pods-DYZB.debug.xcconfig */,
+				AF42BC479BBBC248585A25EC /* Pods-DYZB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB88D3C853BB7D8124507BE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32123E6AA4B4BE6750F503A7 /* Pods_DYZB.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DF522F928C898E90083420E /* Build configuration list for PBXNativeTarget "DYZB" */;
 			buildPhases = (
+				7658CA41D38326A415096165 /* [CP] Check Pods Manifest.lock */,
 				0DF522E128C898E70083420E /* Sources */,
 				0DF522E228C898E70083420E /* Frameworks */,
 				0DF522E328C898E70083420E /* Resources */,
+				81EF7B7B098C5E2182688BDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -387,6 +439,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7658CA41D38326A415096165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYZB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81EF7B7B098C5E2182688BDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0DF522E128C898E70083420E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -395,15 +489,21 @@
 				0DF5236728CA5E870083420E /* CollectionPrettyCell.swift in Sources */,
 				0DF5232628C89EA40083420E /* HomeViewController.swift in Sources */,
 				0DF522ED28C898E70083420E /* ViewController.swift in Sources */,
+				0D91E70F28CB1B9800E29DE5 /* AnchorGroup.swift in Sources */,
+				0D91E71128CB83D300E29DE5 /* AnchorModel.swift in Sources */,
+				0D91E70D28CB19D300E29DE5 /* Date-Extension.swift in Sources */,
 				0DF5233228C984790083420E /* PageTitleView.swift in Sources */,
 				0DF522E928C898E70083420E /* AppDelegate.swift in Sources */,
+				0D91E70B28CAEE8200E29DE5 /* RecommendViewModel.swift in Sources */,
 				0DF5233428C986360083420E /* Common.swift in Sources */,
 				0DF522EB28C898E70083420E /* SceneDelegate.swift in Sources */,
 				0DF5235F28CA57530083420E /* CollectionHeaderView.swift in Sources */,
 				0DF5232828C89EB00083420E /* LiveViewController.swift in Sources */,
 				0DF5233628C9BF180083420E /* PageContentView.swift in Sources */,
+				0D91E70828CAE58F00E29DE5 /* NetworkTool.swift in Sources */,
 				0DF5233828C9C2150083420E /* UIColor-Extension.swift in Sources */,
 				0DF5236328CA5AE90083420E /* CollectionNormalCell.swift in Sources */,
+				0D91E71328CB921400E29DE5 /* CollectionBaseCell.swift in Sources */,
 				0DF5232428C89D880083420E /* MainViewController.swift in Sources */,
 				0DF5232C28C89EC70083420E /* ProfileViewController.swift in Sources */,
 				0DF5233028C8A9410083420E /* UIBarButtonItem-Extension.swift in Sources */,
@@ -542,6 +642,7 @@
 		};
 		0DF522FA28C898E90083420E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC7996C0265CB9C1E24A235E /* Pods-DYZB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -570,6 +671,7 @@
 		};
 		0DF522FB28C898E90083420E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF42BC479BBBC248585A25EC /* Pods-DYZB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
