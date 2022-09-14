@@ -15,6 +15,21 @@ class RecommendViewModel {
 
 extension RecommendViewModel {
     
+
+    /// 测试数据
+    func testLoadData(finishCallback: @escaping () -> (Void)){
+        for _ in 0..<10 {
+            let group = AnchorGroup()
+            for _ in 0..<5 {
+                let anchor = AnchorModel()
+                group.anchors.append(anchor)
+            }
+            self.anchorgroup.append(group)
+        }
+        finishCallback()
+    }
+    
+    
     func loadData(finishCallback: @escaping () -> (Void)) {
         
         let dis_group = DispatchGroup()
@@ -63,7 +78,5 @@ extension RecommendViewModel {
             self.anchorgroup.insert(self.bigGroup, at: 0)
             finishCallback()
         }
-        
-        
     }
 }

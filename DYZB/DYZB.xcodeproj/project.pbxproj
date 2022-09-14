@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7A9BA728CDC4CA002C6DA1 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A9BA628CDC4CA002C6DA1 /* RecommendCycleView.swift */; };
+		0D7A9BAD28CDC51C002C6DA1 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7A9BAC28CDC51C002C6DA1 /* RecommendCycleView.xib */; };
 		0D91E70828CAE58F00E29DE5 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E70728CAE58F00E29DE5 /* NetworkTool.swift */; };
 		0D91E70B28CAEE8200E29DE5 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E70A28CAEE8200E29DE5 /* RecommendViewModel.swift */; };
 		0D91E70D28CB19D300E29DE5 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91E70C28CB19D300E29DE5 /* Date-Extension.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7A9BA628CDC4CA002C6DA1 /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		0D7A9BAC28CDC51C002C6DA1 /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		0D91E70728CAE58F00E29DE5 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		0D91E70A28CAEE8200E29DE5 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		0D91E70C28CB19D300E29DE5 /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 			children = (
 				0DF5235D28CA57530083420E /* CollectionHeaderView.swift */,
 				0DF5235E28CA57530083420E /* CollectionHeaderView.xib */,
+				0D7A9BA628CDC4CA002C6DA1 /* RecommendCycleView.swift */,
+				0D7A9BAC28CDC51C002C6DA1 /* RecommendCycleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,6 +437,7 @@
 				0DF522F228C898E90083420E /* Assets.xcassets in Resources */,
 				0DF5231E28C89CE60083420E /* Live.storyboard in Resources */,
 				0DF5231C28C89CDA0083420E /* Home.storyboard in Resources */,
+				0D7A9BAD28CDC51C002C6DA1 /* RecommendCycleView.xib in Resources */,
 				0DF5236828CA5E870083420E /* CollectionPrettyCell.xib in Resources */,
 				0DF5232228C89D040083420E /* Profile.storyboard in Resources */,
 				0DF5232028C89CF60083420E /* Follow.storyboard in Resources */,
@@ -494,6 +501,7 @@
 				0D91E70D28CB19D300E29DE5 /* Date-Extension.swift in Sources */,
 				0DF5233228C984790083420E /* PageTitleView.swift in Sources */,
 				0DF522E928C898E70083420E /* AppDelegate.swift in Sources */,
+				0D7A9BA728CDC4CA002C6DA1 /* RecommendCycleView.swift in Sources */,
 				0D91E70B28CAEE8200E29DE5 /* RecommendViewModel.swift in Sources */,
 				0DF5233428C986360083420E /* Common.swift in Sources */,
 				0DF522EB28C898E70083420E /* SceneDelegate.swift in Sources */,
